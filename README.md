@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# Ruby on Rails Tutorial sample application
 
-You can use the [editor on GitHub](https://github.com/ebe222/First-rails/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is the sample application for
+[*Ruby on Rails Tutorial:
+Learn Web Development with Rails*](http://www.railstutorial.org/)
+by [Michael Hartl](http://www.michaelhartl.com/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## License
 
-### Markdown
+All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)
+is available jointly under the MIT License and the Beerware License. See
+[LICENSE.md](LICENSE.md) for details.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Getting started
 
-```markdown
-Syntax highlighted code block
+To get started with the app, clone the repo and then install the needed gems:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+$ bundle install --without production
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Next, migrate the database:
 
-### Jekyll Themes
+```
+$ rails db:migrate
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ebe222/First-rails/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Finally, run the test suite to verify that everything is working correctly:
 
-### Support or Contact
+```
+$ rails test
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
+
+For more information, see the
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
